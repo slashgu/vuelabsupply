@@ -48,31 +48,11 @@ const Contact = () => {
               <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
                   <div style={{ padding: '1rem', backgroundColor: 'var(--bg-light)', borderRadius: '50%' }}>
-                    <Mail color="var(--secondary)" size={28} />
-                  </div>
-                  <div>
-                    <h4 style={{ fontSize: '1.125rem', marginBottom: '0.25rem' }}>Email Us</h4>
-                    <a href="mailto:info@vuelabsupply.com" style={{ color: 'var(--primary)', fontWeight: 500, fontSize: '1.125rem' }}>info@vuelabsupply.com</a>
-                  </div>
-                </div>
-
-                <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
-                  <div style={{ padding: '1rem', backgroundColor: 'var(--bg-light)', borderRadius: '50%' }}>
                     <Phone color="var(--secondary)" size={28} />
                   </div>
                   <div>
                     <h4 style={{ fontSize: '1.125rem', marginBottom: '0.25rem' }}>Call Us</h4>
                     <a href="tel:+85295795572" style={{ color: 'var(--primary)', fontWeight: 500, fontSize: '1.125rem' }}>+852 9579 5572</a>
-                  </div>
-                </div>
-
-                <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
-                  <div style={{ padding: '1rem', backgroundColor: '#25D366', borderRadius: '50%' }}>
-                    <MessageCircle color="white" size={28} />
-                  </div>
-                  <div>
-                    <h4 style={{ fontSize: '1.125rem', marginBottom: '0.25rem' }}>WhatsApp</h4>
-                    <a href="#" style={{ color: 'var(--primary)', fontWeight: 500, fontSize: '1.125rem' }}>Chat with Sales</a>
                   </div>
                 </div>
 
