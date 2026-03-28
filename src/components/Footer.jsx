@@ -38,11 +38,11 @@ const Footer = () => {
               </li>
               <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem' }}>
                 <Phone size={20} color="var(--secondary)" style={{ flexShrink: 0, marginTop: '2px' }}/>
-                <span>+1 800 123 4567</span>
+                <span>+852 9579 5572</span>
               </li>
               <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem' }}>
                 <MapPin size={20} color="var(--secondary)" style={{ flexShrink: 0, marginTop: '2px' }}/>
-                <span>Global Distribution Network</span>
+                <span>8th floor, 48-62 Hennessy Road, HongKong</span>
               </li>
             </ul>
           </div>

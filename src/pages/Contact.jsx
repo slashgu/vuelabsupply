@@ -62,7 +62,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 style={{ fontSize: '1.125rem', marginBottom: '0.25rem' }}>Call Us</h4>
-                    <a href="tel:+18001234567" style={{ color: 'var(--primary)', fontWeight: 500, fontSize: '1.125rem' }}>+1 800 123 4567</a>
+                    <a href="tel:+85295795572" style={{ color: 'var(--primary)', fontWeight: 500, fontSize: '1.125rem' }}>+852 9579 5572</a>
                   </div>
                 </div>
 
@@ -82,7 +82,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 style={{ fontSize: '1.125rem', marginBottom: '0.25rem' }}>Company Location</h4>
-                    <p style={{ color: 'var(--primary)', fontWeight: 500, fontSize: '1.125rem' }}>Guangzhou, China (Export Hub)</p>
+                    <p style={{ color: 'var(--primary)', fontWeight: 500, fontSize: '1.125rem' }}>8th floor, 48-62 Hennessy Road, HongKong</p>
                   </div>
                 </div>
               </div>
