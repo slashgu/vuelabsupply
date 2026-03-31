@@ -6,11 +6,32 @@ const Contact = () => {
   const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' })
   const [submitted, setSubmitted] = useState(false)
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    setSubmitted(true)
-    setTimeout(() => setSubmitted(false), 5000)
-    setFormData({ name: '', email: '', subject: '', message: '' })
+    
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: "4e751ba1-6324-444f-a002-f6932e2df25a",
+          from_name: "VueLab Supply Website",
+          subject: formData.subject || "New Contact Message",
+          ...formData
+        })
+      });
+      const result = await response.json();
+      if (result.success) {
+        setSubmitted(true)
+        setTimeout(() => setSubmitted(false), 5000)
+        setFormData({ name: '', email: '', subject: '', message: '' })
+      }
+    } catch (error) {
+      console.error(error);
+    }
   }
 
   const handleChange = (e) => setFormData({ ...formData, [e.target.name]: e.target.value })

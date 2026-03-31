@@ -14,12 +14,32 @@ const OEM = () => {
   })
   const [submitted, setSubmitted] = useState(false)
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    // Simulated form submission
-    setSubmitted(true)
-    setTimeout(() => setSubmitted(false), 5000)
-    setFormData({companyName: '', contactPerson: '', email: '', productInterest: '', estimatedQuantity: '', privateLabelNeeded: 'Yes', message: ''})
+    
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: "4e751ba1-6324-444f-a002-f6932e2df25a",
+          from_name: "VueLab Supply Website",
+          subject: "New OEM Inquiry from " + formData.companyName,
+          ...formData
+        })
+      });
+      const result = await response.json();
+      if (result.success) {
+        setSubmitted(true)
+        setTimeout(() => setSubmitted(false), 5000)
+        setFormData({companyName: '', contactPerson: '', email: '', productInterest: '', estimatedQuantity: '', privateLabelNeeded: 'Yes', message: ''})
+      }
+    } catch (error) {
+      console.error(error);
+    }
   }
 
   const handleChange = (e) => {
