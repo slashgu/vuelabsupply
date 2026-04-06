@@ -15,8 +15,8 @@ const Products = () => {
       <section style={{ padding: '4rem 0' }}>
         <div className="container">
           {/* EMA Monomer */}
-          <div style={{ marginBottom: '5rem', display: 'flex', flexWrap: 'wrap', gap: '4rem', alignItems: 'center' }}>
-            <div style={{ flex: '1 1 400px', backgroundColor: 'var(--background-bg)', padding: '2rem', borderRadius: '8px', textAlign: 'center' }}>
+          <div className="flex-row-mobile-stack" style={{ marginBottom: '5rem', display: 'flex', flexWrap: 'wrap', gap: '4rem', alignItems: 'center' }}>
+            <div className="flex-child-card" style={{ flex: '1 1 400px', backgroundColor: 'var(--background-bg)', padding: '2rem', borderRadius: '8px', textAlign: 'center' }}>
                <img src="/monomer-1g.png" alt="EMA Monomer 1 Gallon" style={{ maxWidth: '100%', maxHeight: '400px', objectFit: 'contain' }} />
             </div>
             <div style={{ flex: '1 1 400px' }}>
@@ -36,8 +36,8 @@ const Products = () => {
           </div>
 
           {/* Nail Tools */}
-          <div style={{ marginBottom: '5rem', display: 'flex', flexWrap: 'wrap-reverse', gap: '4rem', alignItems: 'center' }}>
-            <div style={{ flex: '1 1 400px' }}>
+          <div className="flex-row-mobile-stack" style={{ marginBottom: '5rem', display: 'flex', flexWrap: 'wrap-reverse', gap: '4rem', alignItems: 'center' }}>
+            <div className="flex-child-card" style={{ flex: '1 1 400px' }}>
               <span style={{ color: 'var(--accent-color)', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '1px' }}>Category 02</span>
               <h2 style={{ fontSize: '2.5rem', marginBottom: '1rem', marginTop: '0.5rem' }}>Professional Nail Tools</h2>
               <p style={{ fontSize: '1.1rem', marginBottom: '1.5rem', color: '#444' }}>
@@ -60,8 +60,8 @@ const Products = () => {
           </div>
 
           {/* Consumables */}
-          <div style={{ marginBottom: '2rem', display: 'flex', flexWrap: 'wrap', gap: '4rem', alignItems: 'center' }}>
-            <div style={{ flex: '1 1 400px', backgroundColor: 'var(--background-bg)', padding: '1rem', borderRadius: '8px', minHeight: '400px', display: 'grid', gridTemplateColumns: '1fr 1fr', gridTemplateRows: '1fr 1fr', gap: '1rem' }}>
+          <div className="flex-row-mobile-stack" style={{ marginBottom: '2rem', display: 'flex', flexWrap: 'wrap', gap: '4rem', alignItems: 'center' }}>
+            <div className="flex-child-card" style={{ flex: '1 1 400px', backgroundColor: 'var(--background-bg)', padding: '1rem', borderRadius: '8px', minHeight: '400px', display: 'grid', gridTemplateColumns: '1fr 1fr', gridTemplateRows: '1fr 1fr', gap: '1rem' }}>
               <img src="/cons_buffer.jpg" alt="Nail Buffer" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '4px', gridColumn: '1 / span 2' }} />
               <img src="/cons_files.jpg" alt="Nail Files" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '4px' }} />
               <img src="/cons_separators.jpg" alt="Toe Separators" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '4px' }} />
