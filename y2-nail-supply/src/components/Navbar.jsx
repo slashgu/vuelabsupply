@@ -1,7 +1,13 @@
+import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import { FaBars, FaTimes } from 'react-icons/fa'
 
 const Navbar = () => {
   const location = useLocation();
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => setIsOpen(!isOpen);
+  const closeMenu = () => setIsOpen(false);
 
   const links = [
     { name: 'Home', path: '/' },
@@ -23,20 +29,27 @@ const Navbar = () => {
       padding: '1rem 0'
     }}>
       <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <Link to="/" style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--primary-color)' }}>
+        <Link to="/" onClick={closeMenu} style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--primary-color)' }}>
           Y2<span style={{ color: 'var(--accent-color)' }}>Nail</span> <span style={{ fontWeight: 400 }}>Supply</span>
         </Link>
+        
+        <button className="mobile-menu-btn" onClick={toggleMenu}>
+          {isOpen ? <FaTimes /> : <FaBars />}
+        </button>
+
         <nav>
-          <ul style={{ listStyle: 'none', display: 'flex', gap: '2rem' }}>
+          <ul className={`nav-links ${isOpen ? 'open' : ''}`} style={{ listStyle: 'none', display: 'flex', gap: '2rem' }}>
             {links.map((link) => (
               <li key={link.path}>
                 <Link 
                   to={link.path} 
+                  onClick={closeMenu}
                   style={{ 
                     fontWeight: 500,
                     color: location.pathname === link.path ? 'var(--primary-color)' : 'var(--text-dark)',
                     borderBottom: location.pathname === link.path ? '2px solid var(--primary-color)' : 'none',
-                    paddingBottom: '0.25rem'
+                    paddingBottom: '0.25rem',
+                    display: 'block'
                   }}
                 >
                   {link.name}

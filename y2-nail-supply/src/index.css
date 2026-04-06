@@ -55,6 +55,15 @@ a {
   border: none;
 }
 
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
 .btn-primary {
   background-color: var(--primary-color);
   color: white;
@@ -106,15 +115,34 @@ a {
 
   section { padding: 3rem 0 !important; }
 
-  /* Navbar stack */
+  /* Navbar Hamburger Menu */
   header .container {
-    flex-direction: column !important;
-    gap: 1rem;
+    flex-direction: row !important;
+    justify-content: space-between !important;
   }
-  header nav ul {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.8rem !important;
+  
+  .mobile-menu-btn {
+    display: block !important;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem !important;
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: all 0.3s ease-out;
+  }
+
+  .nav-links.open {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
   
   /* Flex wrap adjustments for Products and Home */
