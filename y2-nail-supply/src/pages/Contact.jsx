@@ -60,13 +60,7 @@ const Contact = () => {
                 </ul>
               </div>
 
-              <div style={{ padding: '2rem', backgroundColor: '#eef4ed', borderRadius: '8px' }}>
-                <h4 style={{ color: 'var(--primary-color)', marginBottom: '0.5rem' }}>Business Hours</h4>
-                <p style={{ color: '#444' }}>
-                  Monday - Friday: 9:00 AM - 6:00 PM (PST)<br />
-                  Weekends: Closed
-                </p>
-              </div>
+
             </div>
 
           </div>
