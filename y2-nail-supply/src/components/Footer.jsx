@@ -25,7 +25,7 @@ const Footer = () => {
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.5rem', color: 'var(--accent-color)' }}>
               <li>📍 Los Angeles, CA</li>
               <li>📧 sales@y2nailsupply.com</li>
-              <li>📞 1-800-Y2NAIL-SUPPLY</li>
+              <li>📞 +1 4259799926</li>
             </ul>
           </div>
         </div>

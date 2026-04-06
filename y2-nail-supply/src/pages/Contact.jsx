@@ -54,14 +54,7 @@ const Contact = () => {
                     <span style={{ fontSize: '1.5rem' }}>📞</span>
                     <div>
                       <strong>Phone:</strong>
-                      <br />1-800-Y2NAIL-SUPPLY
-                    </div>
-                  </li>
-                  <li style={{ marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                    <span style={{ fontSize: '1.5rem' }}>💬</span>
-                    <div>
-                      <strong>WhatsApp:</strong>
-                      <br />+1 (555) 019-2834
+                      <br />+1 4259799926
                     </div>
                   </li>
                 </ul>
