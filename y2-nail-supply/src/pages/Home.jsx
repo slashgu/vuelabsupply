@@ -58,7 +58,7 @@ const Home = () => {
             {/* Featured product using the downloaded image */}
             <div style={{ border: '1px solid var(--border-color)', borderRadius: '8px', overflow: 'hidden' }}>
               <div style={{ height: '300px', backgroundColor: '#f5f5f5', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                <img src="/monomer-1g.png" alt="EMA Monomer 1 Gallon" style={{ maxHeight: '100%', objectFit: 'contain' }} />
+                <img src="/ema-monomer-new.jpg" alt="EMA Monomer 1 Gallon" style={{ maxHeight: '100%', objectFit: 'contain' }} />
               </div>
               <div style={{ padding: '1.5rem' }}>
                 <h3 style={{ marginBottom: '0.5rem' }}>🧪 EMA Monomer</h3>

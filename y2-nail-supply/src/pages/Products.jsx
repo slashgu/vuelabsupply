@@ -17,7 +17,7 @@ const Products = () => {
           {/* EMA Monomer */}
           <div className="flex-row-mobile-stack" style={{ marginBottom: '5rem', display: 'flex', flexWrap: 'wrap', gap: '4rem', alignItems: 'center' }}>
             <div className="flex-child-card" style={{ flex: '1 1 400px', backgroundColor: 'var(--background-bg)', padding: '2rem', borderRadius: '8px', textAlign: 'center' }}>
-               <img src="/monomer-1g.png" alt="EMA Monomer 1 Gallon" style={{ maxWidth: '100%', maxHeight: '400px', objectFit: 'contain' }} />
+               <img src="/ema-monomer-new.jpg" alt="EMA Monomer 1 Gallon" style={{ maxWidth: '100%', maxHeight: '400px', objectFit: 'contain' }} />
             </div>
             <div style={{ flex: '1 1 400px' }}>
               <span style={{ color: 'var(--accent-color)', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '1px' }}>Category 01</span>
