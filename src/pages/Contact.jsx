@@ -17,7 +17,7 @@ const Contact = () => {
           Accept: "application/json",
         },
         body: JSON.stringify({
-          access_key: "4e751ba1-6324-444f-a002-f6932e2df25a",
+          access_key: "72877d7c-642c-4c8c-b658-2aedbc3718e9",
           from_name: "VueLab Supply Website",
           subject: formData.subject || "New Contact Message",
           ...formData
@@ -67,6 +67,16 @@ const Contact = () => {
               <h2 className="heading-lg" style={{ marginBottom: '2rem' }}>Get in Touch</h2>
               
               <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
+                  <div style={{ padding: '1rem', backgroundColor: 'var(--bg-light)', borderRadius: '50%' }}>
+                    <Mail color="var(--secondary)" size={28} />
+                  </div>
+                  <div>
+                    <h4 style={{ fontSize: '1.125rem', marginBottom: '0.25rem' }}>Email Us</h4>
+                    <a href="mailto:sales@vuelabsupply.com" style={{ color: 'var(--primary)', fontWeight: 500, fontSize: '1.125rem' }}>sales@vuelabsupply.com</a>
+                  </div>
+                </div>
+
                 <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
                   <div style={{ padding: '1rem', backgroundColor: 'var(--bg-light)', borderRadius: '50%' }}>
                     <Phone color="var(--secondary)" size={28} />

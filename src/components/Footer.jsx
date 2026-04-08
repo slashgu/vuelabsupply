@@ -34,6 +34,10 @@ const Footer = () => {
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '1rem', color: 'rgba(255,255,255,0.7)' }}>
 
               <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem' }}>
+                <Mail size={20} color="var(--secondary)" style={{ flexShrink: 0, marginTop: '2px' }}/>
+                <a href="mailto:sales@vuelabsupply.com" style={{ color: 'inherit' }}>sales@vuelabsupply.com</a>
+              </li>
+              <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem' }}>
                 <Phone size={20} color="var(--secondary)" style={{ flexShrink: 0, marginTop: '2px' }}/>
                 <span>+852 9579 5572</span>
               </li>
